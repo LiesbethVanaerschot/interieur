@@ -1,0 +1,56 @@
+#block-views-nieuws-block-1{
+  @include span-columns(8, 12);
+  margin-right: 0px;
+  .block__content{
+    max-width: 500px;
+    .views-field-title a{
+      color: $gray;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .views-field-view-node{
+      text-align: right;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+#block-views-vrienden-van-faydherbe-block-1{
+  @include span-columns(4, 12);
+  margin-right: 0px;
+  h2{
+    float: right;
+  }
+  .content{
+    text-align: right;
+    a{
+      text-decoration: none;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+
+#block-views-evenementen-block-1{
+  h2{
+    color: $orange;
+    border-bottom: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .views-row{
+    vertical-align: top;
+    height: 200px;
+    overflow: hidden;
+    @include span-columns(2, 10);
+    img{
+      width: 100%;
+    }
+    &:last-child{
+      @include span-columns(2 omega, 10);
+    }
+  }
+}
